@@ -15,3 +15,27 @@ posenet.on('pose',getPoses);
 function modeloaded() {
 console.log("poseNet is initialised");
 }
+
+function getPoses(results) {
+if (results.length>0) {
+console.log(results);
+nosex=results[0].pose.nose.x;
+nosey=results[0].pose.nose.y;
+console.log(nosex,nosey);
+leftwristx=results[0].pose.leftWrist.x;
+rightwristx=results[0].pose.rightWrist.x;
+console.log(leftwristx,rightwristx);
+difference=floor(leftwristx-rightwristx);
+console.log(difference);
+}
+}
+
+function draw() {
+background("red");
+fill("yellowgreen");
+stroke("black");
+draw(name);
+position(name,nosey,nosex);
+document.getElementById("square_length").innerHTML="length of square="+difference;
+} 
+    
