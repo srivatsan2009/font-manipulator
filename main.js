@@ -3,7 +3,7 @@ nosey=0;
 leftwristx=0;
 rightwristx=0;
 difference=0;
-name=SRIVATSAN;
+name="SRIVATSAN";
 function setup() {
 video=createCapture(VIDEO);
 video.size(500,500);
@@ -34,8 +34,8 @@ function draw() {
 background("red");
 fill("yellowgreen");
 stroke("black");
-draw(name);
-position(name,nosey,nosex);
-document.getElementById("square_length").innerHTML="length of square="+difference;
+textSize(difference);
+text(name,nosey,nosex);
+document.getElementById("font_size").innerHTML="size of font="+difference;
 } 
     

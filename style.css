@@ -6,7 +6,7 @@ margin:0px;
 width:100%;
 box-shadow: 5px 5px 100px 6px goldenrod;
 }
-#square_length {
+#font_size {
 font-style: oblique;
 color: darkmagenta;
 font-size: 19px;
@@ -25,4 +25,8 @@ background-color: black;
 canvas {
 border: 5px solid blueviolet;
 box-shadow: 5px 5px 23px greenyellow;
+}
+
+#name {
+color: yellow;
 }
